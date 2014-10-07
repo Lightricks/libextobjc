@@ -494,7 +494,7 @@
 			name = "OS X Tests";
 			productName = "Logic Tests";
 			productReference = D0A8B2DC128A495D004AACE0 /* Logic Tests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		D0CFB60E128A8EEE006DC377 /* iOS Tests */ = {
 			isa = PBXNativeTarget;
@@ -512,7 +512,7 @@
 			name = "iOS Tests";
 			productName = "iOS Tests";
 			productReference = D0CFB60F128A8EEE006DC377 /* iOS Tests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		D2AAC07D0554694100DB518D /* libextobjc (OS X) */ = {
 			isa = PBXNativeTarget;
@@ -537,7 +537,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0600;
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "extobjc" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -693,7 +693,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C4F146F99B900D680C9 /* Debug.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = NO;
@@ -712,7 +714,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0919C51146F99B900D680C9 /* Release.xcconfig */;
 			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = NO;
