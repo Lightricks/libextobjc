@@ -669,6 +669,25 @@ metamacro_if_eq(0, 1)(true)(false)
 #define metamacro_if_eq0_18(...) metamacro_expand_
 #define metamacro_if_eq0_19(...) metamacro_expand_
 #define metamacro_if_eq0_20(...) metamacro_expand_
+#define metamacro_if_eq0_21(...) metamacro_expand_
+#define metamacro_if_eq0_22(...) metamacro_expand_
+#define metamacro_if_eq0_23(...) metamacro_expand_
+#define metamacro_if_eq0_24(...) metamacro_expand_
+#define metamacro_if_eq0_25(...) metamacro_expand_
+#define metamacro_if_eq0_26(...) metamacro_expand_
+#define metamacro_if_eq0_27(...) metamacro_expand_
+#define metamacro_if_eq0_28(...) metamacro_expand_
+#define metamacro_if_eq0_29(...) metamacro_expand_
+#define metamacro_if_eq0_30(...) metamacro_expand_
+#define metamacro_if_eq0_31(...) metamacro_expand_
+#define metamacro_if_eq0_32(...) metamacro_expand_
+#define metamacro_if_eq0_33(...) metamacro_expand_
+#define metamacro_if_eq0_34(...) metamacro_expand_
+#define metamacro_if_eq0_35(...) metamacro_expand_
+#define metamacro_if_eq0_36(...) metamacro_expand_
+#define metamacro_if_eq0_37(...) metamacro_expand_
+#define metamacro_if_eq0_38(...) metamacro_expand_
+#define metamacro_if_eq0_39(...) metamacro_expand_
 
 #define metamacro_if_eq1(VALUE) metamacro_if_eq0(metamacro_dec(VALUE))
 #define metamacro_if_eq2(VALUE) metamacro_if_eq1(metamacro_dec(VALUE))
