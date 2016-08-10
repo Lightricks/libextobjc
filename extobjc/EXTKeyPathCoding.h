@@ -7,6 +7,9 @@
 //  Released under the MIT license.
 //
 
+#ifndef EXTC_KEYPATHCODING_H
+#define EXTC_KEYPATHCODING_H
+
 #import <Foundation/Foundation.h>
 #import "metamacros.h"
 
@@ -69,3 +72,4 @@ NSString *lowercaseStringPath = @keypath(NSString.new, lowercaseString);
 
 #define collectionKeypath4(OBJ, PATH, COLLECTION_OBJECT, COLLECTION_PATH) ([[NSString stringWithFormat:@"%s.%s",keypath(OBJ, PATH), keypath(COLLECTION_OBJECT, COLLECTION_PATH)] UTF8String])
 
+#endif
