@@ -7,6 +7,9 @@
 //  Released under the MIT license.
 //
 
+#ifndef EXTC_EXTSCOPE_H_
+#define EXTC_EXTSCOPE_H_
+
 #import "metamacros.h"
 
 /**
@@ -113,4 +116,6 @@ void ext_executeCleanupBlock (__strong ext_cleanupBlock_t *block);
 #define ext_keywordify autoreleasepool {}
 #else
 #define ext_keywordify try {} @catch (...) {}
+#endif
+
 #endif
