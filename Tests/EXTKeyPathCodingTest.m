@@ -73,6 +73,11 @@
 	XCTAssertEqualObjects(path, @"collection.someUniqueProperty", @"");
 }
 
+- (void)testKeyPathInArray {
+  // This triggers the static analyzer if the expression returns nil.
+  NSArray *array __unused = @[@keypath(NSString, class)];
+}
+
 @end
 
 @implementation MyClass
