@@ -41,17 +41,17 @@ NSString *lowercaseStringPath = @keypath(NSString.new, lowercaseString);
 #define keypath(...) \
     _Pragma("clang diagnostic push") \
     _Pragma("clang diagnostic ignored \"-Warc-repeated-use-of-weak\"") \
-    (NO).boolValue ? @"" : ((NSString * _Nonnull)@(cStringKeypath(__VA_ARGS__))) \
+    keypath_va(__VA_ARGS__) \
     _Pragma("clang diagnostic pop") \
 
-#define cStringKeypath(...) \
+#define keypath_va(...) \
     metamacro_if_eq(1, metamacro_argcount(__VA_ARGS__))(keypath1(__VA_ARGS__))(keypath2(__VA_ARGS__))
 
 #define keypath1(PATH) \
-    (((void)(NO && ((void)PATH, NO)), strchr(# PATH, '.') + 1))
+    selector(alloc) ? @(strchr(#PATH, '.') + 1) : (NSString * _Nonnull)(YES ? @"" : ({((void)PATH); (NSString * _Nonnull)nil;}))
 
 #define keypath2(OBJ, PATH) \
-    (((void)(NO && ((void)OBJ.PATH, NO)), # PATH))
+    selector(alloc) ? @#PATH : (NSString * _Nonnull)(YES ? @"" : ({((void)OBJ.PATH); (NSString * _Nonnull)nil;}))
 
 /**
  * \@collectionKeypath allows compile-time verification of key paths across collections NSArray/NSSet etc. Given a real object
@@ -72,9 +72,9 @@ NSString *lowercaseStringPath = @keypath(NSString.new, lowercaseString);
     metamacro_if_eq(3, metamacro_argcount(__VA_ARGS__))(collectionKeypath3(__VA_ARGS__))(collectionKeypath4(__VA_ARGS__))
 
 #define collectionKeypath3(PATH, COLLECTION_OBJECT, COLLECTION_PATH) \
-    (YES).boolValue ? (NSString * _Nonnull)@((const char * _Nonnull)[[NSString stringWithFormat:@"%s.%s", cStringKeypath(PATH), cStringKeypath(COLLECTION_OBJECT, COLLECTION_PATH)] UTF8String]) : (NSString * _Nonnull)nil
+    selector(alloc) ? (NSString * _Nonnull)@((const char * _Nonnull)[[NSString stringWithFormat:@"%@.%@", @keypath_va(PATH), @keypath_va(COLLECTION_OBJECT, COLLECTION_PATH)] UTF8String]) : (NSString * _Nonnull)nil
 
 #define collectionKeypath4(OBJ, PATH, COLLECTION_OBJECT, COLLECTION_PATH) \
-    (YES).boolValue ? (NSString * _Nonnull)@((const char * _Nonnull)[[NSString stringWithFormat:@"%s.%s", cStringKeypath(OBJ, PATH), cStringKeypath(COLLECTION_OBJECT, COLLECTION_PATH)] UTF8String]) : (NSString * _Nonnull)nil
+    selector(alloc) ? (NSString * _Nonnull)@((const char * _Nonnull)[[NSString stringWithFormat:@"%@.%@", @keypath_va(OBJ, PATH), @keypath_va(COLLECTION_OBJECT, COLLECTION_PATH)] UTF8String]) : (NSString * _Nonnull)nil
 
 #endif
