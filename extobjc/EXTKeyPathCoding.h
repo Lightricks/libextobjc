@@ -48,10 +48,10 @@ NSString *lowercaseStringPath = @keypath(NSString.new, lowercaseString);
     metamacro_if_eq(1, metamacro_argcount(__VA_ARGS__))(keypath1(__VA_ARGS__))(keypath2(__VA_ARGS__))
 
 #define keypath1(PATH) \
-    selector(alloc) ? @(strchr(#PATH, '.') + 1) : (NSString * _Nonnull)(YES ? @"" : ({((void)PATH); (NSString * _Nonnull)nil;}))
+    selector(alloc) ? (NSString * _Nonnull)@(strchr(#PATH, '.') + 1) : (NSString * _Nonnull)(YES ? @"" : (NSString * _Nonnull)((void)PATH, nil))
 
 #define keypath2(OBJ, PATH) \
-    selector(alloc) ? @#PATH : (NSString * _Nonnull)(YES ? @"" : ({((void)OBJ.PATH); (NSString * _Nonnull)nil;}))
+    selector(alloc) ? @#PATH : (NSString * _Nonnull)(YES ? @"" : (NSString * _Nonnull)((void)OBJ.PATH, nil))
 
 /**
  * \@collectionKeypath allows compile-time verification of key paths across collections NSArray/NSSet etc. Given a real object
