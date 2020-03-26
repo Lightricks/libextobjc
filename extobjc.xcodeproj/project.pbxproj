@@ -10,8 +10,6 @@
 		876EE9D6170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 876EE9D5170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm */; };
 		876EE9D7170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm in Sources */ = {isa = PBXBuildFile; fileRef = 876EE9D5170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm */; };
 		889218FD20ECF4F2005463BB /* EXTKeypathWeakWarningTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D02B7A19589F7000895448 /* EXTKeypathWeakWarningTest.m */; };
-		D002DAF813656CDF005348A5 /* EXTNilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D002DAF713656CDF005348A5 /* EXTNilTest.m */; };
-		D002DAF913656CDF005348A5 /* EXTNilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D002DAF713656CDF005348A5 /* EXTNilTest.m */; };
 		D005F04315950509007A8A1C /* EXTADT.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F01815950509007A8A1C /* EXTADT.h */; };
 		D005F04415950509007A8A1C /* EXTADT.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F01815950509007A8A1C /* EXTADT.h */; };
 		D005F05115950509007A8A1C /* EXTConcreteProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F01F15950509007A8A1C /* EXTConcreteProtocol.h */; };
@@ -22,10 +20,6 @@
 		D005F05615950509007A8A1C /* EXTCoroutine.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F02115950509007A8A1C /* EXTCoroutine.h */; };
 		D005F05F15950509007A8A1C /* EXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F02615950509007A8A1C /* EXTKeyPathCoding.h */; };
 		D005F06015950509007A8A1C /* EXTKeyPathCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F02615950509007A8A1C /* EXTKeyPathCoding.h */; };
-		D005F06B15950509007A8A1C /* EXTNil.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F02C15950509007A8A1C /* EXTNil.h */; };
-		D005F06C15950509007A8A1C /* EXTNil.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F02C15950509007A8A1C /* EXTNil.h */; };
-		D005F06D15950509007A8A1C /* EXTNil.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F02D15950509007A8A1C /* EXTNil.m */; };
-		D005F06E15950509007A8A1C /* EXTNil.m in Sources */ = {isa = PBXBuildFile; fileRef = D005F02D15950509007A8A1C /* EXTNil.m */; };
 		D005F06F15950509007A8A1C /* extobjc_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = D005F02E15950509007A8A1C /* extobjc_Prefix.pch */; };
 		D005F07015950509007A8A1C /* extobjc_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = D005F02E15950509007A8A1C /* extobjc_Prefix.pch */; };
 		D005F07115950509007A8A1C /* extobjc.h in Headers */ = {isa = PBXBuildFile; fileRef = D005F02F15950509007A8A1C /* extobjc.h */; };
@@ -107,15 +101,11 @@
 		876EE9D4170B13C000AB73BB /* EXTObjectiveCppCompileTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTObjectiveCppCompileTest.h; sourceTree = "<group>"; };
 		876EE9D5170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EXTObjectiveCppCompileTest.mm; sourceTree = "<group>"; };
 		88C709E620D8D75B00AF11BD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D002DAF613656CDF005348A5 /* EXTNilTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTNilTest.h; sourceTree = "<group>"; };
-		D002DAF713656CDF005348A5 /* EXTNilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTNilTest.m; sourceTree = "<group>"; };
 		D005F01815950509007A8A1C /* EXTADT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTADT.h; sourceTree = "<group>"; };
 		D005F01F15950509007A8A1C /* EXTConcreteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTConcreteProtocol.h; sourceTree = "<group>"; };
 		D005F02015950509007A8A1C /* EXTConcreteProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTConcreteProtocol.m; sourceTree = "<group>"; };
 		D005F02115950509007A8A1C /* EXTCoroutine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTCoroutine.h; sourceTree = "<group>"; };
 		D005F02615950509007A8A1C /* EXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTKeyPathCoding.h; sourceTree = "<group>"; };
-		D005F02C15950509007A8A1C /* EXTNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTNil.h; sourceTree = "<group>"; };
-		D005F02D15950509007A8A1C /* EXTNil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTNil.m; sourceTree = "<group>"; };
 		D005F02E15950509007A8A1C /* extobjc_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extobjc_Prefix.pch; sourceTree = "<group>"; };
 		D005F02F15950509007A8A1C /* extobjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extobjc.h; sourceTree = "<group>"; };
 		D005F03415950509007A8A1C /* EXTRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTRuntimeExtensions.h; sourceTree = "<group>"; };
@@ -267,8 +257,6 @@
 				D005F02015950509007A8A1C /* EXTConcreteProtocol.m */,
 				D005F02115950509007A8A1C /* EXTCoroutine.h */,
 				D005F02615950509007A8A1C /* EXTKeyPathCoding.h */,
-				D005F02C15950509007A8A1C /* EXTNil.h */,
-				D005F02D15950509007A8A1C /* EXTNil.m */,
 				D005F03415950509007A8A1C /* EXTRuntimeExtensions.h */,
 				D005F03515950509007A8A1C /* EXTRuntimeExtensions.m */,
 				D005F03615950509007A8A1C /* EXTSafeCategory.h */,
@@ -395,8 +383,6 @@
 				D088C7BD159121A300C70CE2 /* EXTKeyPathCodingTest.m */,
 				D0D02B7919589F7000895448 /* EXTKeypathWeakWarningTest.h */,
 				D0D02B7A19589F7000895448 /* EXTKeypathWeakWarningTest.m */,
-				D002DAF613656CDF005348A5 /* EXTNilTest.h */,
-				D002DAF713656CDF005348A5 /* EXTNilTest.m */,
 				876EE9D4170B13C000AB73BB /* EXTObjectiveCppCompileTest.h */,
 				876EE9D5170B13C000AB73BB /* EXTObjectiveCppCompileTest.mm */,
 				D0FD397213243A31009300A7 /* EXTRuntimeExtensionsTest.h */,
@@ -427,7 +413,6 @@
 				D005F05215950509007A8A1C /* EXTConcreteProtocol.h in Headers */,
 				D005F05615950509007A8A1C /* EXTCoroutine.h in Headers */,
 				D005F06015950509007A8A1C /* EXTKeyPathCoding.h in Headers */,
-				D005F06C15950509007A8A1C /* EXTNil.h in Headers */,
 				D005F07015950509007A8A1C /* extobjc_Prefix.pch in Headers */,
 				D005F07215950509007A8A1C /* extobjc.h in Headers */,
 				D005F07C15950509007A8A1C /* EXTRuntimeExtensions.h in Headers */,
@@ -448,7 +433,6 @@
 				D005F05115950509007A8A1C /* EXTConcreteProtocol.h in Headers */,
 				D005F05515950509007A8A1C /* EXTCoroutine.h in Headers */,
 				D005F05F15950509007A8A1C /* EXTKeyPathCoding.h in Headers */,
-				D005F06B15950509007A8A1C /* EXTNil.h in Headers */,
 				D005F06F15950509007A8A1C /* extobjc_Prefix.pch in Headers */,
 				D005F07115950509007A8A1C /* extobjc.h in Headers */,
 				D005F07B15950509007A8A1C /* EXTRuntimeExtensions.h in Headers */,
@@ -586,7 +570,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D005F05415950509007A8A1C /* EXTConcreteProtocol.m in Sources */,
-				D005F06E15950509007A8A1C /* EXTNil.m in Sources */,
 				D005F07E15950509007A8A1C /* EXTRuntimeExtensions.m in Sources */,
 				D005F08215950509007A8A1C /* EXTSafeCategory.m in Sources */,
 				D005F08615950509007A8A1C /* EXTScope.m in Sources */,
@@ -604,7 +587,6 @@
 				D0C1D918128A57B600E96C0F /* EXTConcreteProtocolTest.m in Sources */,
 				D0E7E85B128F81FA00FE0263 /* EXTSafeCategoryTest.m in Sources */,
 				D0FD397413243A31009300A7 /* EXTRuntimeExtensionsTest.m in Sources */,
-				D002DAF813656CDF005348A5 /* EXTNilTest.m in Sources */,
 				D0B9B0B513727EF800EC1224 /* EXTScopeTest.m in Sources */,
 				D03EC9A3138A25F100559080 /* EXTCoroutineTest.m in Sources */,
 				D088C7BE159121A300C70CE2 /* EXTKeyPathCodingTest.m in Sources */,
@@ -623,7 +605,6 @@
 				D0CFB61F128A8F12006DC377 /* EXTConcreteProtocolTest.m in Sources */,
 				D0E7E85A128F81FA00FE0263 /* EXTSafeCategoryTest.m in Sources */,
 				D0FD397513243A31009300A7 /* EXTRuntimeExtensionsTest.m in Sources */,
-				D002DAF913656CDF005348A5 /* EXTNilTest.m in Sources */,
 				D0B9B0B613727EF800EC1224 /* EXTScopeTest.m in Sources */,
 				D03EC9A4138A25F100559080 /* EXTCoroutineTest.m in Sources */,
 				D088C7BF159121A300C70CE2 /* EXTKeyPathCodingTest.m in Sources */,
@@ -640,7 +621,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D005F05315950509007A8A1C /* EXTConcreteProtocol.m in Sources */,
-				D005F06D15950509007A8A1C /* EXTNil.m in Sources */,
 				D005F07D15950509007A8A1C /* EXTRuntimeExtensions.m in Sources */,
 				D005F08115950509007A8A1C /* EXTSafeCategory.m in Sources */,
 				D005F08515950509007A8A1C /* EXTScope.m in Sources */,
