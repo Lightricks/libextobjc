@@ -10,7 +10,6 @@
 #import "EXTADT.h"
 #import "EXTConcreteProtocol.h"
 #import "EXTKeyPathCoding.h"
-#import "EXTNil.h"
 #import "EXTSafeCategory.h"
 #import "EXTScope.h"
 #import "EXTSelectorChecking.h"
