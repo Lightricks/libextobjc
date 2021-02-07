@@ -7,7 +7,6 @@
 //  Released under the MIT license.
 //
 
-#import "EXTADT.h"
 #import "EXTConcreteProtocol.h"
 #import "EXTKeyPathCoding.h"
 #import "EXTSafeCategory.h"
